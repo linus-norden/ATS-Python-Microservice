@@ -8,7 +8,7 @@ import os
 from dotenv import load_dotenv, find_dotenv
 
 # Laden der ungebungsabhängigen Konfigurationsparameter
-load_dotenv(find_dotenv('Config.env'))
+load_dotenv(find_dotenv('Default_Config.env'))
 # Konfiguration der MySQL-Datenbankverbindung, des Memcached und des MQTT
 db_config = {
     'host': os.getenv('DB_HOST'),
