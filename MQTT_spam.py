@@ -22,7 +22,7 @@ def load_mac_addresses(file_path):
         mac_addresses = [line.strip() for line in file.readlines()]
     return mac_addresses
 
-mac_addresses = load_mac_addresses("C:/users/linus/downloads/beacon_MAC.txt")
+mac_addresses = load_mac_addresses("./beacon_mac.txt")
 
 def on_disconnect(client, userdata, rc):
     if rc != 0:
